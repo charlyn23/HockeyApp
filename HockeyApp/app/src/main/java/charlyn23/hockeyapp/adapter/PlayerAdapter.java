@@ -25,7 +25,6 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerView
     private List<Player> players;
     private int rowLayout;
     private Context context;
-    String imageURL;
 
     @Override
     public PlayerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -38,11 +37,10 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerView
 
 
         holder.nameTextView.setText(players.get(position).getName());
-        imageURL = players.get(position).getImageURL();
         holder.positionTextView.setText(players.get(position).getPosition());
         //TODO: incorporate Picasso for image
         Picasso.with(context).setLoggingEnabled(true);
-//        Picasso.with(context).load(imageURL).into(holder.playerImageView);
+        Picasso.with(context).load(players.get(position).getImage_url()).into(holder.playerImageView);
 
     }
 

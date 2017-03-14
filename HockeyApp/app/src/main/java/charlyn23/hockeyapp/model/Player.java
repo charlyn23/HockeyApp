@@ -7,7 +7,7 @@ package charlyn23.hockeyapp.model;
 public class Player {
 
     String name;
-    String imageURL;
+    String image_url;
     String position;
 
     public Player () {
@@ -15,17 +15,17 @@ public class Player {
 
     public Player (String name,  String imageURL, String position) {
         this.name = name;
-        this.imageURL = imageURL;
+        this.image_url = imageURL;
         this.position = position;
 
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
     public String getName() {
