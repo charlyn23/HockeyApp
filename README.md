@@ -36,3 +36,6 @@ transition to said view.
 4. The rest of the design (or lack of it) is up to you! Make it as ugly or pretty
 
 as you want.
+
+********************************
+Libraries used: Retrofit (+GsonConverter), Picasso
